@@ -10,8 +10,10 @@ describe('color note',async()=>{
         await addNoteScreen.addTitle.addValue("List");
         await addNoteScreen.addNote.addValue("Task1\nTask2\nTask3");
         await addNoteScreen.saveNote();
+
         await expect(addNoteScreen.editBtn).toBeDisplayed();
-        await expect(addNoteScreen.viewNote).toHaveText("Task1\nTask2\nTask3")
+        await expect(addNoteScreen.viewNote).toHaveText("Task1\nTask2\nTask3");
     })
+
    
 })

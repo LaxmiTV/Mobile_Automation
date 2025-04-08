@@ -2,6 +2,7 @@
   "name": "mobileAutomation",
   "type": "module",
   "devDependencies": {
+    "@wdio/allure-reporter": "^9.12.3",
     "@wdio/appium-service": "^9.12.1",
     "@wdio/browserstack-service": "^9.12.3",
     "@wdio/cli": "^9.12.1",
@@ -10,17 +11,20 @@
     "@wdio/mocha-framework": "^9.12.1",
     "@wdio/spec-reporter": "^9.11.0",
     "@wdio/types": "^9.12.2",
+    "allure-commandline": "^2.33.0",
     "appium": "^2.0.1",
     "appium-uiautomator2-driver": "^4.1.5",
     "appium-xcuitest-driver": "^9.1.2",
     "eslint": "^7.32.0",
     "eslint-plugin-wdio": "^7.4.2",
-    "webdriverio": "^9.12.2"
+    "webdriverio": "^9.12.4"
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js"
   },
   "dependencies": {
+    "axios": "^1.8.4",
+    "browsermob-proxy-client": "^0.1.2",
     "dotenv": "^16.4.7"
   }
 }
